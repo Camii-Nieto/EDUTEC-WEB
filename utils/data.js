@@ -1,7 +1,7 @@
 const request = require('postman-request');
 
 const getAllProducts = (callback) => {
-    request('https://edutec-inc-api.herokuapp.com/products', (error, res, body) => {
+    request('https://edutec-inc-app.herokuapp.com/products', (error, res, body) => {
         if(error){
           console.log('Error', error)  
           return callback(error, undefined);
@@ -16,7 +16,7 @@ const getAllProducts = (callback) => {
 }
 
 const getAllServices = (callback) => {
-    request('https://edutec-inc-api.herokuapp.com/services', (error, res, body) => {
+    request('https://edutec-inc-app.herokuapp.com/services', (error, res, body) => {
         if(error){
           console.log('Error', error)  
           return callback(error, undefined);

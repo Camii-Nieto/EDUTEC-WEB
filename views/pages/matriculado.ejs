@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <%- include('../partials/meta')%>
+  </head>
+  <body>
+    <header>
+      <%- include('../partials/nav-em')%>
+
+      <div class="carousel-cont">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <%slidesEm.forEach(slide => {%>
+            <div class="<%= slide.class %>">
+              <img src="<%= slide.img %>" class="d-block w-100 carousel-img" alt="<%= slide.imgAlt %>">
+            </div>
+            <%})%>
+          </div>
+          <%- include('../partials/carouselBtn')%>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="sec-servicios">
+        <div class="container">
+          <h2 class="sec-title">Nuestros servicios</h2>
+            <div class="row justify-content-center">
+              <%JSONBody.forEach(service => {%>
+              <div class="servicio col-xs-10 col-sm-10 col-md-5 col-lg-2">
+                      <h4 class="serv-title"> <a href="#"><%= service.name %></a></h4>
+              </div>
+              <%})%> 
+          </div>
+        </div>
+      </section>
+
+      <section class="contacto-sec">
+        <%- include('../partials/contacto')%>
+      </section>
+    </main>
+
+    <%- include('../partials/footer-em')%>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <%- include('./partials/meta')%>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+          <div class="titulo-bienvenidos">
+              <h1 class="bienvenidos mt-4">Bienvenidos a EDUTEC</h1>
+               <h2 class="sub-bienvenidos mb-4">¿Que estas buscando?</h2> 
+          </div>
+  
+
+          <div class="seleccion-serv d-flex justify-content-center row">
+            <%selectServ.forEach(serv => {%>
+                <div class="d-flex flex-column  m-5 col-xs-10 col-sm-10 col-md-5 col-lg-5">
+                    <img src="<%= serv.img %>" alt="<%= serv.imgAlt %>" class="img-bienvenidos">
+                    <a href="<%= serv.page %>" class="btn-bienvenidos"><%= serv.btn %></a>
+                </div>
+              <%})%>  
+          </div>
+      </div>
+  </header>
+  </body>
+</html>

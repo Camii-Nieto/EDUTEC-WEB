@@ -1,0 +1,197 @@
+/* GENERALES */
+
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
+a{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+ul{
+  list-style: none;
+}
+
+a:hover{
+  color: white;
+}
+
+.sec-title{
+  color: #129BE1;
+  margin-top: 20px;
+  font-weight: bolder;
+}
+
+/* PAGINA BIENVENIDOS */
+
+.bienvenidos, .sub-bienvenidos{
+  text-align: center;
+  color: #129BE1;
+}
+
+
+
+.img-bienvenidos{
+  max-width: 100%;
+  height: 350px;
+  box-shadow: 0px 0px 4px 4px rgb(167, 139, 139);
+  border-radius: 30px;
+}
+
+.btn-bienvenidos{
+  background-color: #129BE1;
+  padding: 15px 0px;
+  text-align: center;
+  border-radius: 30px;
+  margin: 25px 0px;
+}
+
+.btn-bienvenidos:hover{
+  background-color: #524e4e;
+}
+
+.bienvenidos{
+  font-weight: bolder;
+}
+
+/* BARRA DE NAVEGACION */
+.titulo-nav, .titulo-nav:hover{
+  font-size: 35px;
+  font-weight: bolder;
+  margin-right: 50px ;
+  color: white;
+  padding-left: 15px;
+  padding-top: 4px;
+}
+
+.navbar-toggler{
+  margin-right: 15px;
+}
+
+.navbar-nav{
+  margin-right: 15px;
+  padding-left: 10px;
+}
+
+.dropdown-item{
+  color: white;
+  padding: 20px 0px;
+}
+
+.nav-item{
+  padding: 10px 0px;
+}
+
+.dropdown-item{
+  padding-left: 10px;
+}
+
+
+/* CAROUSEL */
+
+.carousel-img{
+  border-radius: 20px;
+}
+
+.carousel-cont{
+  max-width: 900px;
+  margin: 0px auto;
+}
+
+.carousel{
+  margin-top: 25px;
+}
+
+.header-carousel{
+   background-color: #f4f4f4;
+   padding-bottom: 15px;
+}
+
+/* UBICACION */
+
+.ubi-bot{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/*  SECCION SERVICIOS */
+
+.container-servicios{
+  display: flex;
+  justify-content: center;
+  max-width: 1200px;
+}
+
+.servicio{
+  background-color: #2a6988;
+  color: #ffffff;
+  padding: 10px 10px;
+  border-radius: 20px;
+  margin: 10px 10px;
+}
+
+.serv-title{
+  font-size: 19px; 
+}
+
+.serv-title2{
+  font-size: 22px;
+}
+
+.servicio:hover, .servicio2:hover{
+  background-color: #1f307e;
+  text-decoration: underline;
+}
+
+.servicio2{
+  background-color: #2a6988;
+  padding: 10px 10px;
+  border-radius: 20px;
+  margin: 5px 10px;
+}
+
+
+/* FOOTER */
+
+footer{
+  background-color: #212529;
+  color: #ffffff;
+  padding: 10px 0px;
+  position:static;
+  bottom: 0;
+}
+
+.foot-title{
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.item-list a{
+  font-size: 12px;
+  padding: 10px 0px;
+}
+
+.item-list a:hover{
+  text-decoration: underline;
+}
+
+.foot-left, .foot-center, .foot-right{
+  margin: 0px 20px;
+}
+
+/* CONTACTO */
+
+.img-contacto{
+  max-width: 100%;
+}
+
+.separador{
+  height: 191px;
+}
+
+.separador-productos{
+  height: 450px;
+}
